@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+  		<meta charset="UTF-8">
+  	</head>
+	<body>
+		<%unless @list_of_images.blank?%>
+			<%@list_of_images.each do |img|%>
+				<div id="image-view" class="col-md-2">
+					<%= raw img%>
+				</div>
+			<%end%>	
+		<%end%>
+	</body>
+</html>
